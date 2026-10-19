@@ -179,6 +179,19 @@ textarea{resize:vertical;min-height:88px}
 .rate-cell input[type=number]{max-width:130px}
 .rate-cell .sel{max-width:170px}
 .dblock-err{padding:9px 14px;color:var(--danger);font-size:12.5px;background:rgba(192,57,43,.05);border-radius:0 0 12px 12px}
+@media(max-width:560px){
+  .dtbl,.dtbl tbody,.dtbl tr,.dtbl th,.dtbl td{display:block;width:auto;max-width:none}
+  .dtbl tr{border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+  .dtbl tr:last-child{margin-bottom:0}
+  .dtbl th{width:auto;max-width:none;border:0;border-bottom:1px solid var(--line);background:var(--surface-2);padding:9px 12px;font-size:12px;font-weight:600;color:var(--muted);border-radius:10px 10px 0 0}
+  .dtbl td{border:0;padding:11px 12px}
+  .dtbl .sel,.dtbl .sel.add{width:100%;max-width:none}
+  .rate-cell{flex-direction:column;align-items:stretch;gap:8px}
+  .rate-cell input[type=number],.rate-cell .sel{max-width:none;width:100%}
+  .dblock-head{padding:11px 12px}
+  .dblock-head .rn{margin-top:20px}
+  .dblock-head .xbtn{margin-top:20px}
+}
 .btn-add{border:1px dashed var(--accent);background:var(--accent-soft);color:var(--accent-ink);padding:10px 18px;border-radius:8px;font-weight:600;font-size:14px;cursor:pointer}
 .btn-add:hover{filter:brightness(.97)}
 .miniflab{font-size:13px;color:var(--muted)}
